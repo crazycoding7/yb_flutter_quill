@@ -74,8 +74,8 @@ Widget defaultEmbedBuilder(
     case BlockEmbed.videoType:
       final videoUrl = node.value.data;
       if (videoUrl.contains('youtube.com') || videoUrl.contains('youtu.be')) {
-        return YoutubeVideoApp(
-            videoUrl: videoUrl, context: context, readOnly: readOnly);
+        // return YoutubeVideoApp(
+        //     videoUrl: videoUrl, context: context, readOnly: readOnly);
       }
       return VideoApp(
         videoUrl: videoUrl,
